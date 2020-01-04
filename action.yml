@@ -4,11 +4,16 @@ author: 'Ricardo Canastro'
 inputs:
   source:
     description: 'Source file'
+    required: true
   target:
     description: 'Target file'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args: 
+    - ${{inputs.source}}
+    - ${{inputs.target}}
 branding:
   icon: 'copy'
   color: 'green'

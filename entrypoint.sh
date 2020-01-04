@@ -1,6 +1,3 @@
-#!/bin/bash
+#!/bin/sh -l
 
-set -e
-set -o pipefail
-
-sh -c "cp $*"
+cp $1 $2
