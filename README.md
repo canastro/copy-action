@@ -1,0 +1,20 @@
+## Usage
+
+copy files and artifacts via SSH as blow.
+
+```yaml
+name: copy files
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: copy file
+      uses: canastro/copy-file-action@master
+      with:
+        source: "tests/a.txt"
+        target: "test-a.txt"
+```

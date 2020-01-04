@@ -1,0 +1,14 @@
+name: 'Copy file'
+description: 'Copy local files'
+author: 'Ricardo Canastro'
+inputs:
+  source:
+    description: 'Source file'
+  target:
+    description: 'Target file'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'copy'
+  color: 'green'
