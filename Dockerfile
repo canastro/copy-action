@@ -1,4 +1,3 @@
-FROM debian:stable-slim
-ADD entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+FROM alpine:latest
+COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
