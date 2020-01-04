@@ -1,3 +1,3 @@
 FROM alpine:latest
-COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+COPY entrypoint.sh /usr/bin/entrypoint
+ENTRYPOINT ["entrypoint"]
