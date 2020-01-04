@@ -1,1 +1,3 @@
-cp $SOURCE $TARGET
+#!/bin/sh -l
+
+sh -c "cp $*"
