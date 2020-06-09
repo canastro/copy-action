@@ -11,3 +11,9 @@ jobs:
       with:
         source: "tests/a.txt"
         target: "test-a.txt"
+    - name: copy file with args
+      uses: canastro/copy-file-action@master
+      with:
+        source: "tests/a.txt"
+        target: "test-a.txt"
+        flags: "-f"
