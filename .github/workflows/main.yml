@@ -17,3 +17,9 @@ jobs:
         source: "tests/a.txt"
         target: "test-a.txt"
         flags: "-f"
+    - name: copy file with args
+      uses: canastro/copy-file-action@master
+      with:
+        source: "tests/path with spaces.txt"
+        target: "path-without-spaces.txt"
+        
