@@ -7,18 +7,18 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: copy file
-      uses: piersb/copy-action-pb@0.0.5
+      uses: piersb/copy-action-pb@0.0.6
       with:
         source: "tests/a.txt"
         target: "test-a.txt"
     - name: copy file with args
-      uses: piersb/copy-action-pb@0.0.5
+      uses: piersb/copy-action-pb@0.0.6
       with:
         source: "tests/a.txt"
         target: "test-a.txt"
         flags: "-f"
     - name: copy file with spaces
-      uses: piersb/copy-action-pb@0.0.5
+      uses: piersb/copy-action-pb@0.0.6
       with:
         source: "tests/path with spaces.txt"
         target: "path-without-spaces.txt"
