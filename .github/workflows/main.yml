@@ -7,13 +7,19 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: copy file
-      uses: canastro/copy-file-action@master
+      uses: piersb/copy-file-action@allow-files-with-spaces
       with:
         source: "tests/a.txt"
         target: "test-a.txt"
     - name: copy file with args
-      uses: canastro/copy-file-action@master
+      uses: piersb/copy-file-action@allow-files-with-spaces
       with:
         source: "tests/a.txt"
         target: "test-a.txt"
         flags: "-f"
+    - name: copy file with args
+      uses: piersb/copy-file-action@allow-files-with-spaces
+      with:
+        source: "tests/path with spaces.txt"
+        target: "path-without-spaces.txt"
+        

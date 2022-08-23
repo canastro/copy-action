@@ -1,0 +1,1 @@
+Test file for copying a file with spaces in its path
