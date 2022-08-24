@@ -1,4 +1,4 @@
-name: 'Copy file (with spaces)'
+name: 'Copy file'
 description: 'Copy local files'
 author: 'Ricardo Canastro'
 inputs:
